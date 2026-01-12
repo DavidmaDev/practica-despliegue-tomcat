@@ -4,7 +4,7 @@
 He descargado e instalado Apache Tomcat 9 (versión 9.0.113). Tras descomprimir el archivo y configurar los permisos de ejecución en la carpeta `bin` mediante la terminal, he arrancado el servidor correctamente.
 
 **Captura 1:** Comprobación de que el servidor está funcionando correctamente (página de inicio).
-![Página de inicio de Tomcat](Captura1.jpg)
+![Página de inicio de Tomcat](Captura1.png)
 
 ## 2. Configuración de Usuarios y Acceso Remoto
 Para poder acceder al gestor de aplicaciones ("Manager App"), he tenido que modificar los archivos de configuración del servidor:
@@ -12,7 +12,7 @@ Para poder acceder al gestor de aplicaciones ("Manager App"), he tenido que modi
 - **`webapps/manager/META-INF/context.xml`**: He eliminado la restricción de seguridad (`Valve`) que impedía el acceso.
 
 **Captura 2:** Acceso exitoso al Gestor de Aplicaciones Web tras la autenticación.
-![Gestor de Aplicaciones de Tomcat](Captura2.jpg)
+![Gestor de Aplicaciones de Tomcat](Captura2.png)
 
 ## 3. Despliegue Manual de un WAR
 He realizado una prueba de despliegue manual utilizando la interfaz web del Manager. He subido el archivo `tomcat1.war` proporcionado en los recursos de la práctica.
