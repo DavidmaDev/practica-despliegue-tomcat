@@ -29,3 +29,14 @@ Finalmente, he configurado un entorno de desarrollo para desplegar aplicaciones 
 
 **Captura 4:** Resultado final del despliegue automático con Maven (Hola Mundo).
 ![Despliegue con Maven](Captura4.png)
+
+## 5. Despliegue de Aplicación Adicional (Rock-Paper-Scissors)
+Siguiendo las instrucciones de la tarea, he desplegado una segunda aplicación obtenida desde un repositorio externo.
+
+1. **Clonado del repositorio:** He descargado el código desde GitHub y he cambiado a la rama específica `patch-1` tal y como indicaba el enunciado.
+2. **Configuración:** - He añadido el plugin `tomcat7-maven-plugin` al `pom.xml` para desplegar en la ruta `/roshambo`.
+   - He solucionado un error de compilación actualizando la versión de Java (source/target) de 1.7 a 1.8 en el `pom.xml`.
+3. **Despliegue:** He ejecutado el comando `mvn tomcat7:deploy` obteniendo un resultado satisfactorio.
+
+**Captura 5:** La aplicación Rock-Paper-Scissors funcionando correctamente.
+![Juego Piedra Papel Tijera](Captura5.png)
